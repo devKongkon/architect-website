@@ -1,0 +1,284 @@
+/* linked font family  */
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Work+Sans:wght@400;500;700&display=swap');
+/* Common style for all body  */
+body{
+    font-family: 'Work Sans', sans-serif;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+/* ----------------------------
+Style header navigation menu  
+-------------------------------*/
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.logo{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.nav-list{
+    list-style-type: none;
+}
+.nav-list li{
+    display: inline-block;
+    padding: 0px 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #424242;
+}
+.navbar a:hover{
+    color: rgb(0, 0, 255);
+}
+@media screen and (max-width: 576px) {
+    .navbar{
+
+        max-width: 600px;
+    }
+
+    }
+    
+
+/* -----------------------
+Style banner section  
+-------------------------*/
+.banner{
+    text-align: center;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.banner-title{
+    font-size: 64px;
+    margin: 0px 0px;
+}
+.banner-para{
+    font-size:16px ;
+    color: #727272;
+    font-weight: 400;
+    margin: 30px 0px;
+}
+.banner img{
+    width: 1440px;
+    height: 700px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.btn-primary{
+    padding: 20px 24px;
+    background-color:#FF900E;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+    .banner img{
+        width: 90%;
+        height: 70%;
+
+    }
+}
+/* -----------------------------------------
+Style quick list of our feature section  
+-------------------------------------------*/
+.features-container{
+    display: flex;
+    align-items: center;
+    gap: 73px;
+    background-color: #FFFFFF;
+    padding-top: 30px;
+}
+.feature-images{
+    display: grid;
+    gap:24px ;
+    grid-template-columns:repeat(2, 1fr);
+}
+.feature-content{
+    padding-right: 50px;
+}
+.feature-title{
+    font-size: 45px;
+    font-weight: 700;
+
+}
+.first-color{
+    color:#727272 ;
+}
+.secound-color{
+    color:#131313 ;
+}
+.third-color{
+    color:#FF900E ;
+}
+
+@media screen and (max-width: 576px) {
+    .features-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-images{
+        display: grid;
+        gap:24px ;
+        grid-template-columns:repeat(1, 1fr);
+    }
+}
+/*---------------------------------------------
+ Style Features you will love and enjoy setion 
+  ------------------------------------------------*/
+.love-enjoy{
+    display: flex;
+    gap: 54px;
+    padding-top: 130px;   
+}
+.content-box{
+    padding: 30px 42px 30px 30px ;
+}
+.love-enjoy-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid#FF900E ;
+    padding-left: 26px;
+}
+.content-title{
+    font-size: 20px;
+    font-weight: 600;
+    color:#131313 ;
+}
+.content-paragraph{
+    font-size: 16px;
+    color: #727272;
+
+}
+.big-button{
+    background-color:#FF900E ;
+    display: inline-block;
+    padding: 45px 42px 45px 42px;
+    border-radius:8px;
+    position: relative;
+    top: -133px;
+    left: -74px;
+}
+.button-title{
+    font-size: 65px;
+    color: white;
+    margin: 0px;
+    text-align: center;
+}
+.button-para{
+    margin: 0px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+@media screen and (max-width: 576px) {
+    .love-enjoy{
+        flex-direction: column-reverse;
+    }
+    .love-image{
+        width: 400px;
+
+    }
+}
+/*--------------------------
+ Style some fact section 
+ ------------------------- */
+.fact-content{
+    margin: 0px 850px 100px 0px;
+}
+.fact-title{
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.fact-para{
+    font-size: 16px;
+    color: #727272;
+}
+ .fact-boxes{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+ }
+ .fact-box{
+    padding:40px 37px 40px 36px ;
+    background-color: white;
+    border: 1px solid #FF900E;
+    transition: transform 1s;
+ }
+ .fact-box:hover{
+    transform: skew(-20deg)
+ }
+.fact-box-title{
+    margin: 0px;
+    font-size: 45px;
+    font-weight: 600;
+    color: #424242;
+    padding: 5px 0px;
+}
+.fact-box-para{
+    margin: 0px;
+    padding: 5px 0px;
+}
+@media screen and (max-width: 576px) {
+    
+}
+
+/* ----------------------
+Style Sponspors section
+------------------------*/
+.our-sponspors{
+    padding:120px 50px ;
+}
+.sponspors-contect{
+    text-align: center;
+}
+.sponspors-logo img{
+    width: 150px;
+}
+.sponspors-logo{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.changed-logo-color{
+    filter: grayscale(100%);
+}
+@media screen and (max-width: 576px) {
+    
+}
+/*-------------------
+Bonous section 
+
+-------------------- */
+.bonous-title{
+    text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+    
+}
+
+
+
+
+/*-----------------------------
+ Style footer section 
+ -----------------------------*/
+.footer{}
+.footer-para{
+    text-align: center;
+    padding: 39px 410px;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+@media screen and (max-width: 576px) {
+    
+}
